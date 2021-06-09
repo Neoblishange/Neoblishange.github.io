@@ -72,7 +72,20 @@ h1 {
     font-size: xx-large;
 }
 
-#presentation, #assets, #about {
+h1.presentation {
+    text-align: left;
+    margin-left: 100px;
+    font-size: 80px;
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+
+div.presentationSub {
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+#home, #assets, #about {
     background-color: dimgrey;
 }
 
