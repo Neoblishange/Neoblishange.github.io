@@ -1,5 +1,9 @@
 html {
     scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -107,12 +111,12 @@ div.presentationSub {
 }
 
 .sci_fi_view {
-    width: 960px;
-    height: 510px;
+    width: 400px;
+    height: 400px;
     position: absolute;
-    margin-left: 318px;
+    margin-left: 390px;
     opacity: 20%;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 button {
@@ -143,6 +147,7 @@ button {
     opacity: 0.8;
     margin-bottom: 50px;
     color: aliceblue;
+    z-index: 5;
 }
 
 .ariane:hover {
@@ -167,7 +172,7 @@ button {
 .button {
     display: block;
     width: 90px;
-    height: 25px;
+    height: auto;
     background: #14899c;
     padding: 10px;
     text-align: center;
@@ -176,4 +181,106 @@ button {
     font-weight: bold;
     text-decoration: none;
     margin-right: 20px;
+}
+
+.text {
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 40px;
+    width: 280px;
+    z-index: 5;
+}
+
+.content div {
+    margin-bottom: 10px;
+}
+
+.content {
+    display: inline-flex;
+}
+
+.images {
+    left : 35%;
+    position: absolute;
+    background-size: cover;
+}
+
+img {
+    position: absolute;
+    border-radius: 8px;
+}
+
+#pic00 {
+
+}
+
+#pic01 {
+    margin-left: 210px;
+}
+
+#pic03 {
+    margin-left: 420px;
+}
+
+video {
+    margin-left: 630px;
+    width: 200px;
+    height: 330px;
+    border-radius: 8px;
+    background-color: black;
+}
+
+@media (min-width: 1300px) {
+    #pic00, #pic01, #pic03 {
+        width: 200px;
+        height: 330px;
+    }
+}
+@media (max-width: 1300px) {
+    #pic00, #pic01, #pic03 {
+        width: 100px;
+        height: 165px;
+    }
+    .images {
+        left : 60%;
+        position: absolute;
+        background-size: cover;
+    }
+    #pic00 {
+
+    }
+
+    #pic01 {
+        margin-left: 110px;
+    }
+
+    #pic03 {
+        margin-left: 0px;
+        margin-top: 200px;
+        position: absolute;
+    }
+
+    video {
+        margin-left: 110px;
+        margin-top: 200px;
+        width: 100px;
+        height: 165px;
+    }
+
+    h1.presentation {
+        font-size: 60px;
+    }
+
+    div.presentationSub {
+        font-size: 18px;
+    }
+
+    .sci_fi_view {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        margin-left: 320px;
+        opacity: 20%;
+        margin-top: 105px;
+    }
 }
