@@ -98,11 +98,11 @@ div.presentationSub {
     font-size: 20px;
 }
 
-#home, #project1, #contact {
+#home, #project1 {
     background-color: dimgrey;
 }
 
-#projects, #project2 {
+#projects, #contact {
     background-color: darkslategrey;
 }
 
@@ -189,6 +189,7 @@ button {
     margin-left: 40px;
     width: 280px;
     z-index: 5;
+    text-align: justify;
 }
 
 .content div {
@@ -199,8 +200,14 @@ button {
     display: inline-flex;
 }
 
-.images {
+.images0 {
     left : 35%;
+    position: absolute;
+    background-size: cover;
+}
+
+.images1 {
+    left : 30%;
     position: absolute;
     background-size: cover;
 }
@@ -218,8 +225,29 @@ img {
     margin-left: 210px;
 }
 
-#pic03 {
+#pic02 {
     margin-left: 420px;
+}
+
+#pic03 {
+
+}
+
+#pic04 {
+    margin-left: 305px;
+}
+
+#pic05 {
+    margin-left: 610px;
+}
+
+#pic06 {
+    margin-top: 155px;
+}
+
+#pic07 {
+    margin-left: 305px;
+    margin-top: 155px;
 }
 
 video {
@@ -230,18 +258,49 @@ video {
     background-color: black;
 }
 
+.imgProject0, .imgProject1 {
+    transition: all 1s ease;
+}
+
+.imgProject0:hover {
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    z-index: 5;
+    transition: all 1s ease;
+}
+
+.imgProject1:hover {
+    -ms-transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+    z-index: 5;
+    transition: all 1s ease;
+}
+
 @media (min-width: 1300px) {
-    #pic00, #pic01, #pic03 {
+    #pic00, #pic01, #pic02 {
         width: 200px;
         height: 330px;
     }
+
+    #pic03, #pic04, #pic05, #pic06, #pic07 {
+        width: 300px;
+        height: 150px;
+    }
 }
 @media (max-width: 1300px) {
-    #pic00, #pic01, #pic03 {
+    #pic00, #pic01, #pic02 {
         width: 100px;
         height: 165px;
     }
-    .images {
+
+    #pic03, #pic04, #pic05, #pic06, #pic07 {
+        width: 200px;
+        height: 100px;
+    }
+
+    .images0 {
         left : 60%;
         position: absolute;
         background-size: cover;
@@ -254,10 +313,30 @@ video {
         margin-left: 110px;
     }
 
-    #pic03 {
+    #pic02 {
         margin-left: 0px;
         margin-top: 200px;
         position: absolute;
+    }
+
+    #pic03 {
+
+    }
+
+    #pic04 {
+        margin-top: 110px;
+    }
+
+    #pic05 {
+        margin-top: 220px;
+    }
+
+    #pic06 {
+        margin-top: 330px;
+    }
+
+    #pic07 {
+        margin-top: 440px;
     }
 
     video {
