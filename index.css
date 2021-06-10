@@ -21,6 +21,10 @@ body {
     margin-left: 10%;
 }
 
+.coord {
+    font-size: 25px;
+}
+
 .contact2 {
     margin-left: 60%;
 }
@@ -122,12 +126,12 @@ button {
     font-size: 18px;
 }
 
-button:hover {
-    background-color: white;
+.button:hover {
+    background-color: floralwhite;
     color: black;
 }
 
-button:active {
+.button:active {
     transform: translateY(2px);
 }
 
@@ -158,4 +162,18 @@ button:active {
     float: right;
     margin-right: 3%;
     margin-top: 90px;
+}
+
+.button {
+    display: block;
+    width: 90px;
+    height: 25px;
+    background: #14899c;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    color: floralwhite;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
 }
