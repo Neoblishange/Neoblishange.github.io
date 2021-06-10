@@ -206,12 +206,6 @@ button {
     background-size: cover;
 }
 
-.images1 {
-    left : 30%;
-    position: absolute;
-    background-size: cover;
-}
-
 img {
     position: absolute;
     border-radius: 8px;
@@ -227,27 +221,6 @@ img {
 
 #pic02 {
     margin-left: 420px;
-}
-
-#pic03 {
-
-}
-
-#pic04 {
-    margin-left: 305px;
-}
-
-#pic05 {
-    margin-left: 610px;
-}
-
-#pic06 {
-    margin-top: 155px;
-}
-
-#pic07 {
-    margin-left: 305px;
-    margin-top: 155px;
 }
 
 video {
@@ -285,8 +258,35 @@ video {
     }
 
     #pic03, #pic04, #pic05, #pic06, #pic07 {
-        width: 300px;
+        width: 225px;
         height: 150px;
+    }
+
+    #pic03 {
+
+    }
+
+    #pic04 {
+        margin-left: 235px;
+    }
+
+    #pic05 {
+        margin-left: 470px;
+    }
+
+    #pic06 {
+        margin-top: 160px;
+    }
+
+    #pic07 {
+        margin-left: 235px;
+        margin-top: 160px;
+    }
+
+    .images1 {
+        left : 35%;
+        position: absolute;
+        background-size: cover;
     }
 }
 @media (max-width: 1300px) {
@@ -296,7 +296,7 @@ video {
     }
 
     #pic03, #pic04, #pic05, #pic06, #pic07 {
-        width: 200px;
+        width: 150px;
         height: 100px;
     }
 
@@ -305,6 +305,13 @@ video {
         position: absolute;
         background-size: cover;
     }
+
+    .images1 {
+        left : 55%;
+        position: absolute;
+        background-size: cover;
+    }
+
     #pic00 {
 
     }
