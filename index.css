@@ -12,6 +12,10 @@ body {
     margin-top: 10%;
 }
 
+.contact div, button {
+    margin-bottom: 10px;
+}
+
 .contact1 {
     float: left;
     margin-left: 10%;
@@ -27,6 +31,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 .navbar a {
@@ -67,8 +72,8 @@ section {
 
 h1 {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 60px;
     font-size: xx-large;
 }
 
@@ -77,7 +82,7 @@ h1.presentation {
     margin-left: 100px;
     font-size: 80px;
     margin-bottom: 20px;
-    margin-top: 205px;
+    margin-top: 210px;
 }
 
 div.presentationSub {
@@ -85,11 +90,11 @@ div.presentationSub {
     font-size: 20px;
 }
 
-#home, #assets, #about {
+#home, #project1, #contact {
     background-color: dimgrey;
 }
 
-#projects, #contact {
+#projects, #project2 {
     background-color: darkslategrey;
 }
 
@@ -101,8 +106,56 @@ div.presentationSub {
     width: 960px;
     height: 510px;
     position: absolute;
-    margin-left: 320px;
-    opacity: 40%;
-    margin-top: 25px;
+    margin-left: 318px;
+    opacity: 20%;
+    margin-top: 30px;
 }
 
+button {
+    border-radius: 15px;
+    height: 40px;
+    width: 80px;
+    background-color: #171313;
+    border: none;
+    color: white;
+    font-family: "Calibri", sans-serif;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.ariane, .arianeActive {
+    padding: 14px 14px;
+    background-color: dimgrey;
+    border-radius: 50%;
+    border-style: outset;
+    opacity: 0.8;
+    margin-bottom: 50px;
+    color: aliceblue;
+}
+
+.ariane:hover {
+    background-color: lightskyblue;
+    color: dimgrey;
+    border-radius: 60px;
+}
+
+.arianeActive {
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 60px;
+}
+
+.container {
+    display: inline-grid;
+    float: right;
+    margin-right: 3%;
+    margin-top: 90px;
+}
