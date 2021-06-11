@@ -4,6 +4,7 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+
 }
 body {
     margin: 0;
@@ -198,17 +199,17 @@ video {
     transition: all 1s ease;
 }
 .imgProject0:hover {
-    -ms-transform: scale(2);
-    -webkit-transform: scale(2);
-    transform: scale(2);
-    z-index: 5;
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    z-index: 12;
     transition: all 1s ease;
 }
 .imgProject1:hover {
-    -ms-transform: scale(2.5);
-    -webkit-transform: scale(2.5);
-    transform: scale(2.5);
-    z-index: 5;
+    -ms-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3);
+    z-index: 12;
     transition: all 1s ease;
 }
 @media (min-width: 1300px) {
@@ -216,29 +217,31 @@ video {
     #pic00, #pic01, #pic02 {
         width: 200px;
         height: 330px;
+
+        image-rendering: optimizeQuality;
     }
     #pic03, #pic04, #pic05, #pic06, #pic07 {
-        width: 225px;
-        height: 150px;
+        width: 240px;
+        height: 160px;
     }
     #pic03 {
 
     }
     #pic04 {
-        margin-left: 235px;
+        margin-left: 250px;
     }
     #pic05 {
-        margin-left: 470px;
+        margin-left: 500px;
     }
     #pic06 {
-        margin-top: 160px;
+        margin-top: 170px;
     }
     #pic07 {
-        margin-left: 235px;
-        margin-top: 160px;
+        margin-left: 250px;
+        margin-top: 170px;
     }
     .images1 {
-        left : 35%;
+        left : 30%;
         position: absolute;
         background-size: cover;
     }
@@ -329,4 +332,36 @@ video {
 
 ::-webkit-scrollbar-thumb:hover {
     background: steelblue;
+}
+
+#spawnBox {
+    position: absolute;
+    z-index: 8;
+    left: 25%;
+}
+
+#spawnBox img {
+    transform: scale(1.5);
+    margin-left: 120px;
+}
+
+.changeImageLeft {
+    z-index: 9;
+    color: lightgrey;
+    position: absolute;
+    margin-top: 160px;
+    padding: 5px 5px;
+}
+
+.changeImageRight {
+    z-index: 9;
+    color: lightgrey;
+    margin-left: 780px;
+    padding: 5px 5px;
+    position: absolute;
+    margin-top: 160px;
+}
+
+.changeImageLeft:hover, .changeImageRight:hover {
+    background-color: dimgrey;
 }
